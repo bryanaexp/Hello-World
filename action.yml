@@ -12,4 +12,6 @@ runs:
     - run: echo Hello ${{ inputs.who-to-greet }}.
       shell: bash
     - uses: actions/checkout@v3
-    - run: script.py
+    - name: Generate Javadoc
+      shell: bash 
+      run: script.py
