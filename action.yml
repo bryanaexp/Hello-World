@@ -19,4 +19,4 @@ runs:
       run: |
         ls
         pwd
-        python script.py
+        python script.py ${{ inputs.who-to-greet }}
