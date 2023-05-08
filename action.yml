@@ -16,4 +16,4 @@ runs:
       run: |
         ls
         pwd
-        script.py
+        python script.py
