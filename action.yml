@@ -13,4 +13,7 @@ runs:
       shell: bash
     - name: Generate Javadoc
       shell: bash 
-      run: script.py
+      run: |
+        ls
+        pwd
+        script.py
