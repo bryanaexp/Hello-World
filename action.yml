@@ -11,7 +11,6 @@ runs:
   steps:
     - run: echo Hello ${{ inputs.who-to-greet }}.
       shell: bash
-    - uses: actions/checkout@v3
     - name: Generate Javadoc
       shell: bash 
       run: script.py
