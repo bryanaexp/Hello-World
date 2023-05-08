@@ -11,7 +11,10 @@ runs:
   steps:
     - run: echo Hello ${{ inputs.who-to-greet }}.
       shell: bash
-    - name: Generate Javadoc
+    - uses: actions/checkout@v3
+      with:
+        repository: 'bryanaexp/Hello-World'
+    - name: Run Script
       shell: bash 
       run: |
         ls
