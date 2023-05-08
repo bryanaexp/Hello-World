@@ -11,3 +11,9 @@ runs:
   steps:
     - run: echo Hello ${{ inputs.who-to-greet }}.
       shell: bash
+    - name: Invoke workflow with inputs
+      uses: aurelien-baudet/workflow-dispatch@v2
+      with:
+        workflow: bryanaexp/demo-logger
+        token: ${{ secrets.PERSONAL_TOKEN }}
+        inputs: '{ "message": ${{ inputs.who-to-greet }} }'
