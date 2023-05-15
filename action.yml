@@ -11,12 +11,3 @@ runs:
   steps:
     - run: echo Hello ${{ inputs.who-to-greet }}.
       shell: bash
-    - uses: actions/checkout@v3
-      with:
-        repository: 'bryanaexp/Hello-World'
-    - name: Run Script
-      shell: bash 
-      run: |
-        ls
-        pwd
-        python script.py ${{ inputs.who-to-greet }}
