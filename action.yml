@@ -11,3 +11,4 @@ runs:
   steps:
     - run: echo Hello ${{ inputs.who-to-greet }}. V3 version
       shell: bash
+
