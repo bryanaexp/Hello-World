@@ -3,7 +3,7 @@ name: Upload Node.js 10 and 12 tool cache
 on: push
 jobs:
   upload_tool_cache:
-    runs-on: k8s-runner-2x4
+    runs-on: ubuntu-latest
     steps:
       - name: Clear any existing tool cache
         run: |
