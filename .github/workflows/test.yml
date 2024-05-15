@@ -11,3 +11,6 @@ jobs:
       #     gh-cli-version: 2.32.0
       - run: export GH_TOKEN=${{ secrets.GH_TOKEN }}
       - run: gh repo list bryanaexp
+        env:
+          GH_TOKEN: ${{secrets.GH_TOKEN}}
+
