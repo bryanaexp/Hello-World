@@ -9,4 +9,5 @@ jobs:
       #   uses: dev-hanz-ops/install-gh-cli-action@v0.1.0
       #   with:
       #     gh-cli-version: 2.32.0
+      - run: export GH_TOKEN=${{ secrets.GH_TOKEN }}
       - run: gh repo list bryanaexp
