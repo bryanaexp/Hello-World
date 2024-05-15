@@ -5,8 +5,8 @@ jobs:
   upload_tool_cache:
     runs-on: ubuntu-latest
     steps:
-      - name: Install GH CLI
-        uses: dev-hanz-ops/install-gh-cli-action@v0.1.0
-        with:
-          gh-cli-version: 2.32.0
+      # - name: Install GH CLI
+      #   uses: dev-hanz-ops/install-gh-cli-action@v0.1.0
+      #   with:
+      #     gh-cli-version: 2.32.0
       - run: gh repo list bryanaexp
