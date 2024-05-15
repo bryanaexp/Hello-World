@@ -1,27 +1,12 @@
-name: Upload Node.js 10 and 12 tool cache
+name: GH CLI
 
 on: push
 jobs:
   upload_tool_cache:
     runs-on: ubuntu-latest
     steps:
-      - name: Clear any existing tool cache
-        run: |
-          sudo mv "${{ runner.tool_cache }}" "${{ runner.tool_cache }}.old"
-          sudo mkdir -p "${{ runner.tool_cache }}"
-      - name: Analysis Commands
-        run: |
-          pwd
-          ls
-          sleep 240
-      - uses: actions/setup-node@v3
+      - name: Install GH CLI
+        uses: dev-hanz-ops/install-gh-cli-action@v0.1.0
         with:
-         node-version: 16
-      - name: Archive tool cache
-        run: |
-          cd "${{ runner.tool_cache }}"
-          tar -czf tool_cache.tar.gz *
-      - name: Upload tool cache artifact
-        uses: actions/upload-artifact@v2
-        with:
-          path: ${{runner.tool_cache}}/tool_cache.tar.gz
+          gh-cli-version: 2.32.0
+      - run: gh repo list bryanaexp
