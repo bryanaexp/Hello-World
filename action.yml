@@ -9,7 +9,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: echo Hello ${{ inputs.who-to-greet }}. Layer 1
-    - name: Invoke Layer 2
-      uses: bryanaexp/ga-layer-2
+    - run: echo Hello ${{ inputs.who-to-greet }} Layer 1
+    # - name: Invoke Layer 2
+    #   uses: bryanaexp/ga-layer-2
 
