@@ -5,7 +5,7 @@ jobs:
   wow:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up java
+      - name: Layer 1
         uses: bryanaexp/Hello-World@main
         with:
           who-to-greet: 'edward'
