@@ -5,7 +5,6 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'World'
-
 runs:
   using: "composite"
   steps:
