@@ -12,6 +12,6 @@ runs:
     - name: Set Greeting
       run: echo "Hello ."
       shell: bash
-    # - name: Invoke Layer 2
-    #   uses: bryanaexp/ga-layer-2
+    - name: Invoke Layer 2
+      uses: bryanaexp/ga-layer-2
 
