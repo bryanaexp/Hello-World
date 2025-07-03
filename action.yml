@@ -7,7 +7,9 @@ runs:
     - name: Set Greeting
       run: echo "PUBLIC ACTION LOG"
       shell: bash
-    - run: |
+    - name: Sample API
+      shell: bash
+      run: |
         curl -L \
           -H "Accept: application/vnd.github+json" \
           -H "Authorization: Bearer mocktokennotreal" \
